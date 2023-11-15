@@ -5,11 +5,11 @@ public class Main {
         var restockVisitor = new RestockVisitor();
         var warningVisitor = new WarningVisitor();
 
-        var paperLevel = printer.accept(restockVisitor);
-        var breadLevel = toaster.accept(restockVisitor);
+        var paperLevel;
+        var breadLevel;
 
-        var printerTemp = printer.accept(warningVisitor);
-        var toasterTemp = toaster.accept(warningVisitor);
+        var printerTemp;
+        var toasterTemp;
 
         System.out.println(paperLevel);
         System.out.println(breadLevel);
