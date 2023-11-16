@@ -1,2 +1,2 @@
-public class Printer {
+public class Printer implements Accessory{
 }
